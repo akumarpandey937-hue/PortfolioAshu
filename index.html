@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Ashutosh</span><br />
+            from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- About page --------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img.jpeg" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Ashutosh Kumar Pandey, and I am currently pursuing a B.Tech from Graphic Era Hill University. I am in my 3rd year (6th semester) and have a strong interest in web development.
+              I enjoy building modern, responsive, and user-friendly websites and continuously work on improving my skills by learning new web technologies. I like solving problems, experimenting with ideas, and converting concepts into real, working projects.
+              My goal is to grow as a skilled web developer and contribute to meaningful projects that create real-world impact.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-End Web Development</span><br />HTML / CSS / JavaScript / jQuery / React / Bootstrap</li>
+                <li><span>Programming Languages</span><br />C / C++ / Java / Python</li>
+                <li><span>Databases</span><br>MySQL / MongoDB</li>
+                <li><span>Backend & Server-Side Technologies</span><br>php / Node.js (Ongoing Learning)</li>
+                <li><span>Currently Learning</span><br>Advanced Backend Development<br>Node.js & MongoDB Integration<br>Full-Stack Application Development</li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Learning</span><br />Web Development </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>B.Tech</span><br />Computer Science</li>
+                 <li><span>12th</span><br />From kendriya vidyalaya ima dehradun(2023)<br>70.1%</li>
+                  <li><span>10th</span><br />
+                  kendriya vidyalaya ima dehradun(2021)<br>91.4%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---------------------------services------------------------------ -->
+ <div id="services">
+      <div class="continer">
+          <h1 class="sub-title">My services</h1>
+          <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                 <h2>Web devlopment</h2>
+                 <p>I have a strong foundation in front-end web development and enjoy creating responsive and user-friendly websites. I work with HTML, CSS, JavaScript, React, Bootstrap, and jQuery to build modern web interfaces with clean design and smooth user experience. I focus on writing structured code, ensuring responsiveness, and improving performance while following best UI/UX practices.</a>
+             </div>
+
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                 <h2>Problem solving</h2>
+                 <p>I am actively improving my problem-solving skills by practicing programming and logical challenges. I have experience using C, C++, Java, and basic Python, which helps me develop strong analytical thinking and algorithmic understanding. I enjoy solving problems that improve my coding efficiency and deepen my understanding of data structures and logic building..</p>
+                 <a href="#">Learn More</a>
+             </div>
+                <div>
+                 <i class="fa-brands fa-app-store"></i> 
+                 <h2>Backhand devloper</h2>
+                 <p>I have working knowledge of backend development and database management. I am familiar with PHP for server-side scripting and have experience working with databases such as MySQL and Oracle. I understand how backend logic, database connectivity, and data handling work together to support dynamic web applications.</a>
+             </div>
+          </div>
+      </div>
+ </div>
+
+<!-- ------------------------portfolio--------------------------- -->
+ <div id="portfolio">
+     <div class="continer">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+           <img src="images/work-1.png">
+           <div class="layer">
+           <h3>Tourism Management System</h3>
+           <p>The Tourism Management System is a web-based application developed as part of my college PBL project. This system helps users explore tourist destinations, manage travel information, and plan trips efficiently. It includes features such as destination details, tour packages, booking information, and user-friendly navigation. The project focuses on improving travel planning while demonstrating my skills in web development, database handling, and backend integration..</p>
+           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+        </div>
+         <div class="work">
+           <img src="images/work-2.png">
+            <div class="layer">
+           <h3>Zero Trust Model Authentication System</h3>
+           <p>The Zero Trust Model Authentication System is a security-focused project designed to enhance user authentication and access control. This project follows the principle of “never trust, always verify” by validating users at every access point. It includes secure login mechanisms, identity verification, and role-based access control. Through this project, I gained practical understanding of authentication models, security concepts, and secure system design</p>
+           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+        </div>
+         <div class="work">
+           <img src="images/work-3.png">
+            <div class="layer">
+           <h3>Interview Planner & Tracker (Ongoing Project)</h3>
+           <p>The Interview Planner and Tracker is an ongoing project aimed at helping students and job seekers organize and track their interview preparation and schedules. This system allows users to plan interviews, track application status, manage preparation progress, and store interview-related notes. The project focuses on productivity, organization, and real-life usability while strengthening my skills in full-stack development and problem-solving.</p>
+           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+     </div>
+ </div>
+
+ <!-- -----------------Contact---------------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>ashutoshkumarpandey212@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>7903143420</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ashutosh-kumar-pandey-703786288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+           <a href=http://www.youtube.com/@ashuvlogs-28"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Ashutoshkumarpandey176"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn-2">Download Cv</a>
+      </div>
+<!-- --------------------Form creating Area--------------------------------- -->
+      <div class="contact-right">
+         <form name="contact from">
+           <input type="text" name="Name" placeholder="your name" required>
+           <input type="email" name="email" placeholder="Your Email" required>
+           <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+           <button type="submit" class="btn btn-2" style="background-color: black; cursor: pointer;">Submit</button>
+         </form>
+         <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright@ Ashutosh 2026</p>
+  </div>
+</div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+
+<script>
+   var sidemenu = document.getElementById("sidemenu");
+
+   function openmenu(){
+       sidemenu.style.right = "0";
+   }
+
+   function closemenu(){
+       sidemenu.style.right = "-200px";
+   }
+</script>
+ 
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyRX55Ra3CodNsV3gjV2DFRaIbFmRkaV9Ij5DBkXmyS7UodX8HmdYAbaHjezfG459_X/exec'
+	const form = document.forms['contact from']
+	const msg  = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form),
+      mode: 'no-cors'     // 👈 बस यही add किया
+    })
+			.then(() => {
+				msg.innerHTML = "successfully send to Ashutosh"
+				setTimeout(() => {
+					msg.innerHTML = ""
+				}, 5000)
+				form.reset()
+			})
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+  </body>
+</html>
