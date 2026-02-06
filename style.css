@@ -330,42 +330,37 @@ from.btn2 {
 nav .fas {
   display: none;
 }
-@media only screen and (max-width: 600px) {
 
-  /* ---------- HEADER IMAGE FIX ---------- */
+/* ----------------css media query for the mobile----------------- */
+@media only screen and (max-width: 600px) {
   #header {
+    height: auto;
+    background-image: url(image.jpeg);
+    background-size: contain;   
     width: 100%;
-    height: 100vh;                 /* FULL SCREEN */
-    background-image: url("images/image.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;      /* IMAGE VISIBLE */
-    background-position: top center;
+    min-height: 200px;          
   }
+  
 
   .header-text {
-    margin-top: 90%;
+    margin-top: 100%;
     font-size: 16px;
-    text-align: center;
   }
 
   .header-text h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
-}
-
-  /* ---------- Navigation ---------- */
   nav .fas {
     display: block;
     font-size: 25px;
-    cursor: pointer;
   }
 
   nav ul {
-    background: #ff004f;
+    background-color: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
+    right: -200px; 
     width: 200px;
     height: 100vh;
     padding-top: 50px;
@@ -375,73 +370,42 @@ nav .fas {
 
   nav ul li {
     display: block;
-    margin: 25px;
+    max-width: 25px;
   }
 
   nav ul .fas {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
   }
-
-  /* ---------- About Section ---------- */
   .sub-title {
-    font-size: 36px;
-    text-align: center;
+    font-size: 40px;
   }
-
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
-
   .about-col-1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
-
   .about-col-2 {
-    font-size: 14px;
-    text-align: justify;
+    font-size: 40px;
   }
-
-  /* ---------- Tabs ---------- */
-  .tab-titles {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
   .tab-links {
-    font-size: 14px;
-    margin-right: 0;
+    font-size: 16px;
+    margin-right: 20px;
   }
-
-  /* ---------- Services ---------- */
-  .services-list {
-    grid-template-columns: 1fr;
-  }
-
-  /* ---------- Portfolio ---------- */
-  .work-list {
-    grid-template-columns: 1fr;
-  }
-
-  /* ---------- Contact ---------- */
   .contact-left,
   .contact-right {
     flex-basis: 100%;
   }
-
-  .contact-left {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .social-icons {
-    text-align: center;
-  }
-
-  /* ---------- Footer ---------- */
   .copyright {
-    font-size: 14px;
+    font-size: 40px;
   }
+}
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
