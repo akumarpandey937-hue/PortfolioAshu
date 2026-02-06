@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  background-image: url("images/image.jpeg");
+  background-image: url("image.jpeg");
   background-repeat: no-repeat;
   background-size: 900px;
   background-position: right center;
@@ -335,7 +335,7 @@ nav .fas {
 @media only screen and (max-width: 600px) {
   #header {
     height: auto;
-    background-image: url(images/image.jpeg);
+    background-image: url(image.jpeg);
     background-size: contain;   /* image fits inside screen */
     width: 100%;
     min-height: 200px;          /* adjust if needed */
@@ -410,3 +410,4 @@ nav .fas {
   margin-top: -40px;
   display: block;
 }
+
