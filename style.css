@@ -410,5 +410,50 @@ nav .fas {
   margin-top: -40px;
   display: block;
 }
+/* ----------------About Section for Mobile---------------- */
+#about {
+  padding: 50px 20px; /* reduce padding */
+  box-shadow: none;   /* optional for cleaner mobile view */
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 32px; /* smaller title */
+}
+
+.row {
+  flex-direction: column; /* stack image and text */
+  gap: 20px; /* spacing between them */
+}
+
+.about-col-1,
+.about-col-2 {
+  flex-basis: 100%;
+  margin: 0 auto;
+}
+
+.about-col-1 img {
+  width: 80%; /* smaller image */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.about-col-2 {
+  font-size: 16px; /* text size */
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.tab-titles {
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab-links {
+  font-size: 14px;
+  margin-right: 0;
+}
+
 
 
