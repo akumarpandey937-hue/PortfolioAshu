@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PESE Class Weekly Portfolio</title>
+
+    <style>
+      /* ===============================
+   GOOGLE FONT STYLE
+================================= */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* ===============================
+   BODY BACKGROUND
+================================= */
+      body {
+        background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+        background-size: 400% 400%;
+        animation: bgMove 12s infinite ease;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      /* Background Animation */
+      @keyframes bgMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* ===============================
+   NAVBAR
+================================= */
+      nav {
+        width: 100%;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      nav h2 {
+        font-size: 28px;
+        color: #38bdf8;
+        text-shadow: 0 0 10px #38bdf8;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #38bdf8;
+      }
+
+      /* ===============================
+   HERO SECTION
+================================= */
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      .hero h1 {
+        font-size: 55px;
+        margin-bottom: 15px;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: auto;
+        color: #cbd5e1;
+        line-height: 1.8;
+        font-size: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 14px 30px;
+        background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+        border-radius: 40px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+        transition: 0.4s;
+      }
+
+      .btn:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(56, 189, 248, 0.6);
+      }
+
+      /* ===============================
+   WEEK GRID
+================================= */
+      .container {
+        padding: 50px 8%;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        padding: 30px 20px;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        transition: 0.4s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px) scale(1.04);
+        background: rgba(56, 189, 248, 0.1);
+        box-shadow: 0 20px 35px rgba(56, 189, 248, 0.25);
+      }
+
+      .card h3 {
+        font-size: 26px;
+      }
+
+      /* ===============================
+   WEEK DETAIL SECTION
+================================= */
+      section {
+        margin: 50px 8%;
+        padding: 35px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        transition: 0.4s;
+      }
+
+      section:hover {
+        transform: translateY(-6px);
+      }
+
+      section h2 {
+        color: #38bdf8;
+        margin-bottom: 15px;
+        font-size: 32px;
+      }
+
+      section p {
+        line-height: 1.9;
+        color: #e2e8f0;
+        font-size: 17px;
+      }
+
+      .back {
+        display: inline-block;
+        margin-top: 20px;
+        color: #38bdf8;
+        text-decoration: none;
+      }
+
+ 
+/* Replace old video css */
+
+.video-box{
+    margin-top:25px;
+    display:inline-block;
+    padding:6px;
+    border-radius:18px;
+    background:transparent;
+    box-shadow:
+      0 0 12px red,
+      0 0 25px rgba(255,0,0,0.6);
+}
+
+.video-box video{
+    width:auto;
+    max-width:100%;
+    height:auto;
+    max-height:420px;
+    border-radius:14px;
+    display:block;
+}
+      /* ===============================
+   FOOTER
+================================= */
+      footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        color: #94a3b8;
+      }
+
+      /* ===============================
+   RESPONSIVE
+================================= */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 38px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===============================
+     NAVBAR
+================================= -->
+    <nav>
+      <h2>PESE Portfolio</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="#weeks">Weeks</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ===============================
+     HERO SECTION
+================================= -->
+    <div class="hero">
+      <h1>PESE Class Weekly Journey</h1>
+      <p>
+        portfolio showcasing my PESE classroom learning, communication growth,
+        personality development, teamwork, confidence building, resume skills
+        and group discussions.
+      </p>
+
+      <a href="#weeks" class="btn">Explore Weeks</a>
+    </div>
+
+    <!-- ===============================
+     WEEK CARDS
+================================= -->
+    <div class="container" id="weeks">
+      <div class="grid">
+        <a href="#week1" class="card"><h3>Week 1</h3></a>
+        <a href="#week2" class="card"><h3>Week 2</h3></a>
+        <a href="#week3" class="card"><h3>Week 3</h3></a>
+        <a href="#week4" class="card"><h3>Week 4</h3></a>
+        <a href="#week5" class="card"><h3>Week 5</h3></a>
+        <a href="#week6" class="card"><h3>Week 6</h3></a>
+        <a href="#week7" class="card"><h3>Week 7</h3></a>
+        <a href="#week8" class="card"><h3>Week 8</h3></a>
+        <a href="#week9" class="card"><h3>Week 9</h3></a>
+        <a href="#week10" class="card"><h3>Week 10</h3></a>
+        <a href="#week11" class="card"><h3>Week 11</h3></a>
+        <a href="#week12" class="card"><h3>Week 12</h3></a>
+        <a href="#week13" class="card"><h3>Week 13</h3></a>
+        <a href="#week14" class="card"><h3>Week 14</h3></a>
+      </div>
+    </div>
+
+    <!-- ===============================
+     WEEK DETAILS
+================================= -->
+
+    <section id="week1">
+      <h2>Week 1 - Self Introduction</h2>
+
+      <p>
+        Introduced myself confidently in front of the class. Shared my
+        educational background, interests, career goals, hobbies, strengths and
+        personal values. This activity improved confidence and public speaking
+        ability.
+      </p>
+
+      <!-- Video Added -->
+      <div class="video-box">
+        <video controls>
+          <source src="vedio.mp4" type="video/mp4" />
+          Your browser does not support video.
+        </video>
+      </div>
+    </section>
+
+    <section id="week2">
+      <h2>Week 2 - Communication Basics</h2>
+      <p>
+        Learned fundamentals of communication including verbal communication,
+        non-verbal communication, listening skills, eye contact and tone
+        control. Understood how communication helps in academics and career.
+      </p>
+    </section>
+
+    <section id="week3">
+      <h2>Week 3 - Speaking Practice</h2>
+      <p>
+        Performed speaking tasks to remove hesitation and improve fluency.
+        Worked on pronunciation, sentence framing and confidence while talking.
+      </p>
+    </section>
+
+    <section id="week4">
+      <h2>Week 4 - Personality Development</h2>
+      <p>
+        Focused on grooming, discipline, positive thinking, confidence and
+        attitude. Learned how personality impacts success in interviews and
+        professional life.
+      </p>
+    </section>
+
+    <section id="week5">
+      <h2>Week 5 - JAM Session</h2>
+      <p>
+        Participated in Just A Minute speaking session. Spoke continuously for
+        one minute on random topics. Improved spontaneous speaking and
+        vocabulary.
+      </p>
+    </section>
+
+    <section id="week6">
+      <h2>Week 6 - Extempore</h2>
+      <p>
+        Delivered speeches on instant topics without preparation. This improved
+        thinking speed, presentation skill and stage confidence.
+      </p>
+    </section>
+
+    <section id="week7">
+      <h2>Week 7 - Resume Writing</h2>
+      <p>
+        Learned how to create professional resume. Added education, technical
+        skills, projects, achievements and certifications.
+      </p>
+    </section>
+
+    <section id="week8">
+      <h2>Week 8 - Resume Improvement</h2>
+      <p>
+        Focused on ATS format, professional keywords, layout improvement, strong
+        summary and clean formatting.
+      </p>
+    </section>
+
+    <section id="week9">
+      <h2>Week 9 - Group Discussion</h2>
+      <p>
+        Learned rules of GD, teamwork, active listening and expressing views
+        politely.
+      </p>
+    </section>
+
+    <section id="week10">
+      <h2>Week 10 - Current Affairs Discussion</h2>
+      <p>
+        Participated in discussions on technology, economy and social topics.
+        Built awareness and logical thinking.
+      </p>
+    </section>
+
+    <section id="week11">
+      <h2>Week 11 - Leadership Skills</h2>
+      <p>Learned how to lead a team, manage conflicts and motivate members.</p>
+    </section>
+
+    <section id="week12">
+      <h2>Week 12 - Confidence Building</h2>
+      <p>
+        Regular speaking practice helped in reducing fear and improving stage
+        presence.
+      </p>
+    </section>
+
+    <section id="week13">
+      <h2>Week 13 - Advanced GD Round</h2>
+      <p>
+        Handled challenging topics with logical arguments and better
+        communication.
+      </p>
+    </section>
+
+    <section id="week14">
+      <h2>Week 14 - Final Reflection</h2>
+      <p>
+        Overall PESE classes improved my confidence, communication, resume
+        making, teamwork and personality growth.
+      </p>
+    </section>
+
+    <!-- ===============================
+     FOOTER
+================================= -->
+    <footer id="footer">
+      © 2026 Ashutosh Kumar Pandey | Premium PESE Portfolio
+    </footer>
+  </body>
+</html>
